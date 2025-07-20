@@ -1,7 +1,15 @@
+import React from "react";
 function MainLayout() {
   return (
     <>
-      <div className="breadcrumb-option spad set-bg" data-setbg="/img/breadcrumb-bg.jpg">
+<div
+  className="breadcrumb-option spad"
+  style={{
+    backgroundImage: "url('/img/breadcrumb-bg.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -16,6 +24,30 @@ function MainLayout() {
           </div>
         </div>
       </div>
+
+<section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about__text">
+                        <div class="section-title">
+                            <h2>Welcome to<br /> Auto Motive Garages</h2>
+                            <p>It has survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                            Letraset sheets</p>
+                        </div>
+                        <span>CEO: John Smith</span>
+                        <img src="img/about/signature.png" alt=""/>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__pic">
+                        <img src="img/about/about-us.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
       <section className="vision vision-changebg">
         <div className="container-fluid">
@@ -76,7 +108,15 @@ function MainLayout() {
         </div>
       </section>
 
-      <section className="call spad set-bg" data-setbg="/img/call-bg.jpg">
+<section
+  className="call spad"
+  style={{
+    backgroundImage: "url('/img/call-bg.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat'
+  }}
+>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">

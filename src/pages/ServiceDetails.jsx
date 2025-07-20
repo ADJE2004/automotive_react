@@ -1,7 +1,23 @@
+import React from "react";
+
 function ServiceDetails() {
     return(
         <>
-         <div className="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+<div
+  className="breadcrumb-option spad"
+  style={{
+    backgroundImage: "url('/img/breadcrumb-bg.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    height:'300px'
+  }}
+>
+
+</div>
+     
+
+
         <div className="container">
             <div className="row">
                 <div className="col-lg-12 text-center">
@@ -15,7 +31,7 @@ function ServiceDetails() {
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <section className="services-details spad">
         <div className="container">

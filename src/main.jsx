@@ -1,3 +1,5 @@
+
+import React from "react";
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom';
@@ -6,7 +8,7 @@ import './index.css'
 import App from './App.jsx'
 
 
-//import des styles css globaux
+//import des styles css globaux 
 import './css/bootstrap.min.css'
 import './css/elegant-icons.css'
 import './css/font-awesome.min.css'

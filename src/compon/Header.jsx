@@ -4,7 +4,6 @@ function Header() {
   return (
     <>
     <header style={{
-            height: '120px',        // augmente la hauteur
             backgroundColor: '#000', // couleur de fond si besoin
             color: '#fff',           // texte blanc
             display: 'flex',

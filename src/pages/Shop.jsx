@@ -1,10 +1,13 @@
 // MainLayout from '../compon/MainLayout';
+import React from "react";
 
 function Shop(){
     return(
         <>
        
-       <div className="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+<div
+  className="breadcrumb-option spad"
+  style={{ backgroundImage: "url('/img/breadcrumb-bg.jpg')" }}>
         <div className="container">
             <div className="row">
                 <div className="col-lg-12 text-center">

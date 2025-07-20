@@ -1,4 +1,4 @@
-
+import React from "react";
 //import MainLayout from '../compon/MainLayout';
 function Blog(){
     return(
