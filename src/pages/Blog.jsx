@@ -4,7 +4,7 @@ function Blog(){
     return(
         <>
           <div
-  className="latest__item__pic"style={{ backgroundImage: "url('/img/breadcrumb-bg.jpg')"}}>
+  className="latest__item__pic"style={{ backgroundImage: "url('/img/breadcrumb-bg.jpg')", height:"250px",}}>
         <div className="container">
             <div className="row">
                 <div className="col-lg-12 text-center">

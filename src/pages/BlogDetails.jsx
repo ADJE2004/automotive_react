@@ -139,6 +139,7 @@ function BlogDetails() {
                             <a href="#" class="continue-btn">Continue Reading</a>
                         </div>
                     </div>
+
 </>
     );
 }

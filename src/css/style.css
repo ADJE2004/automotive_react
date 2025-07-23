@@ -501,16 +501,7 @@ ol {
 }
 
 .offcanvas-menu-wrapper {
-  position: relative; /* Plus de fixed */
-    left: 0;
-    width: 300px;
-    height: auto;
-    background: #ffffff;
-    padding: 50px 20px 30px 30px;
-    display: none; /* Toujours affiché */
-    z-index: -1; /* Derrière le header si besoin */
-    opacity: 0; /* Visible */
-	overflow: visible;
+	display: none;
 }
 
 .canvas__open {
@@ -855,8 +846,7 @@ ol {
 }
 
 .footer__copyright {
-	
-	  background-color: #25282C;
+	background: #25282C;
 	padding: 10px 0;
 }
 
@@ -910,12 +900,6 @@ ol {
 /*---------------------
   Breadcrumb
 -----------------------*/
-
-.breadcrumb-option .spad {
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 
 .breadcrumb__text h2 {
 	font-size: 46px;
@@ -2445,11 +2429,9 @@ ol {
 		visibility: hidden;
 	}
 	.offcanvas-menu-overlay.active {
-		display: block;
-    	opacity: 1;
-    	z-index: 999;
+		visibility: visible;
 	}
-	/* .offcanvas-menu-wrapper {
+	.offcanvas-menu-wrapper {
 		position: fixed;
 		left: -300px;
 		width: 300px;
@@ -2463,11 +2445,11 @@ ol {
 		-o-transition: all, 0.5s;
 		transition: all, 0.5s;
 		opacity: 0;
-	} */
-	/* .offcanvas-menu-wrapper.active {
+	}
+	.offcanvas-menu-wrapper.active {
 		opacity: 1;
 		left: 0;
-	} */
+	}
 	.offcanvas__menu {
 		display: none;
 	}
@@ -2578,12 +2560,6 @@ ol {
 	.header .container {
 		position: relative;
 	}
-	.header.header {
-    position: relative;
-    
-	height: auto;
-	overflow: visible;
-}
 	.vision__item {
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
@@ -2684,8 +2660,8 @@ ol {
 		opacity: 0;
 	}
 	.offcanvas-menu-wrapper.active {
-		opacity: 1 !important;
-		left: 0 !important;
+		opacity: 1;
+		left: 0;
 	}
 	.offcanvas__menu {
 		display: none;

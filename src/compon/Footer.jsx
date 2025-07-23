@@ -1,10 +1,29 @@
-function Footer(){
-    return(
-        <>
-        <footer
-  className="footer"
-  style={{ backgroundImage: 'url("/img/footer-bg.jpg")', backgroundSize: 'cover' }}>
-        <div className="container">
+import React from "react";
+import { FaFacebookF, FaTwitter, FaVimeoV, FaPinterestP } from 'react-icons/fa';
+
+function Footer() {
+  // 👉 Style commun aux icônes
+  const socialStyle = {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '35px',
+    height: '35px',
+    borderRadius: '50%',
+    color: '#fff',           
+    fontSize: '16px',
+  };
+
+  return (
+    <>
+      <footer
+        className="footer"
+        style={{
+          backgroundImage: 'url("/img/footer-bg.jpg")',
+          backgroundSize: 'cover',
+        }}
+      >
+<div className="container">
             <div className="footer__top">
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
@@ -92,27 +111,57 @@ function Footer(){
             </div>
         </div>
     </footer>
-    <div className="footer__copyright">
-        <div className="container">
+        {/* COPYRIGHT + ICONES */}
+        <div className="footer__copyright">
+          <div className="container">
             <div className="row">
-                <div className="col-md-8">
-                    <div className="footer__copyright__text">
-                        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i className="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-                    </div>
+              <div className="col-md-8">
+                <div className="footer__copyright__text">
+                  <p>
+                    Copyright &copy; {new Date().getFullYear()} All rights reserved | This template is made with{" "}
+                    <i className="fa fa-heart" aria-hidden="true"></i> by{" "}
+                    <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer">Colorlib</a>
+                  </p>
                 </div>
-                <div className="col-md-4">
-                    <div className="footer__copyright__social">
-                        <a href="#"><span className="social_facebook"></span></a>
-                        <a href="#" className="twitter"><span className="social_twitter"></span></a>
-                        <a href="#" className="vimeo"><span className="social_vimeo"></span></a>
-                        <a href="#" className="pinterest"><span className="social_pinterest"></span></a>
-                    </div>
+              </div>
+
+              <div className="col-md-4 d-flex justify-content-end">
+                <div
+                  className="footer__copyright__social"
+                  style={{ display: "flex", gap: "10px" }}
+                >
+                  <a
+                    href="#"
+                    style={{ ...socialStyle, backgroundColor: "#3b5998" }}
+                  >
+                    <FaFacebookF style={{ fontSize: '14px' }} />
+                  </a>
+                  <a
+                    href="#"
+                    style={{ ...socialStyle, backgroundColor: "#1da1f2" }}
+                  >
+                    <FaTwitter style={{ fontSize: '14px' }} />
+                  </a>
+                  <a
+                    href="#"
+                    style={{ ...socialStyle, backgroundColor: "#1c1e2b" }}
+                  >
+                    <FaVimeoV style={{ fontSize: '14px' }} />
+                  </a>
+                  <a
+                    href="#"
+                    style={{ ...socialStyle, backgroundColor: "#bd081c" }}
+                  >
+                    <FaPinterestP style={{ fontSize: '14px' }} />
+                  </a>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-        </>
-    );
+      
+    </>
+  );
 }
 
 export default Footer;

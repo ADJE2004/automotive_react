@@ -16,7 +16,7 @@ function Home() {
                             Auto-Motive Garage
                         </h2>
                         <p>It is a long established fact that a reader will be distracted by the</p>
-                        <a href="#" class="primary-btn">Our Services</a>
+                        <a href="#" className="primary-btn">Our Services</a>
                     </div>
                 </div>
             </div>
